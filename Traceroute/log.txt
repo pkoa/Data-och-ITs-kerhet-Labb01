@@ -1,0 +1,51 @@
+Script started on 2021-08-23 15:23:54+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="88" LINES="33"]
+]0;user@user-VirtualBox: ~[01;32muser@user-VirtualBox[00m:[01;34m~[00m$ traceroute goo[K[K[Kwww.google.com
+traceroute to www.google.com (142.250.74.132), 30 hops max, 60 byte packets
+ 1  _gateway (10.0.2.2)  0.588 ms  0.572 ms  0.625 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+]0;user@user-VirtualBox: ~[01;32muser@user-VirtualBox[00m:[01;34m~[00m$ sudo traceroute -I www.google.com
+[sudo] password for user: 
+traceroute to www.google.com (142.250.74.132), 30 hops max, 60 byte packets
+ 1  _gateway (10.0.2.2)  0.528 ms  0.509 ms  0.505 ms
+ 2  192.168.1.1 (192.168.1.1)  1.626 ms  2.283 ms  2.256 ms
+ 3  gw1-no243.tbcn.telia.com (217.208.61.1)  10.768 ms  11.514 ms  11.494 ms
+ 4  vs-b-c2-link.se.telia.net (81.228.84.40)  14.593 ms  15.935 ms  15.998 ms
+ 5  * hy-c1-link.se.telia.net (81.228.82.80)  15.680 ms *
+ 6  fre-peer4-link.se.telia.net (81.228.91.179)  16.605 ms  12.404 ms  13.057 ms
+ 7  s-b5-link.ip.twelve99.net (62.115.123.166)  13.405 ms  12.003 ms  13.377 ms
+ 8  72.14.243.64 (72.14.243.64)  13.747 ms  13.717 ms  13.683 ms
+ 9  142.250.213.181 (142.250.213.181)  21.353 ms  22.747 ms  23.241 ms
+10  142.251.48.43 (142.251.48.43)  23.218 ms  23.193 ms  23.169 ms
+11  arn11s11-in-f4.1e100.net (142.250.74.132)  12.657 ms  13.057 ms  13.541 ms
+]0;user@user-VirtualBox: ~[01;32muser@user-VirtualBox[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-08-23 15:25:09+02:00 [COMMAND_EXIT_CODE="0"]

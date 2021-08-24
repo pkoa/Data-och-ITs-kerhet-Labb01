@@ -1,0 +1,29 @@
+Script started on 2021-08-24 13:39:35+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="79" LINES="29"]
+]0;user@user-VirtualBox: ~[01;32muser@user-VirtualBox[00m:[01;34m~[00m$ traceroute www.google.com
+traceroute to www.google.com (216.58.211.4), 30 hops max, 60 byte packets
+ 1  OpenWrt.lan (192.168.1.1)  1.196 ms  1.177 ms  1.426 ms
+ 2  gw1-no243.tbcn.telia.com (217.208.61.1)  10.990 ms  11.560 ms  12.439 ms
+ 3  vs-b-c2-link.se.telia.net (81.228.84.40)  15.146 ms u-b-c2-link.se.telia.net (81.228.84.34)  14.074 ms  14.976 ms
+ 4  * * *
+ 5  fre-peer4-link.se.telia.net (81.228.91.179)  18.390 ms fre-peer4-link.se.telia.net (81.228.88.203)  18.884 ms fre-peer4-link.se.telia.net (81.228.91.179)  19.350 ms
+ 6  s-b5-link.ip.twelve99.net (62.115.123.166)  18.800 ms  15.438 ms  15.577 ms
+ 7  72.14.243.64 (72.14.243.64)  16.559 ms  12.867 ms  12.373 ms
+ 8  * * *
+ 9  172.253.72.118 (172.253.72.118)  15.461 ms 209.85.242.10 (209.85.242.10)  12.551 ms muc03s13-in-f4.1e100.net (216.58.211.4)  13.532 ms
+]0;user@user-VirtualBox: ~[01;32muser@user-VirtualBox[00m:[01;34m~[00m$ t[Ksudo traceroute -I www.google.com
+[sudo] password for user: 
+traceroute to www.google.com (216.58.211.4), 30 hops max, 60 byte packets
+ 1  OpenWrt.lan (192.168.1.1)  0.681 ms  1.996 ms  1.998 ms
+ 2  gw1-no243.tbcn.telia.com (217.208.61.1)  10.762 ms  11.645 ms  11.888 ms
+ 3  vs-b-c2-link.se.telia.net (81.228.84.40)  15.425 ms  15.719 ms  16.622 ms
+ 4  * * *
+ 5  fre-peer4-link.se.telia.net (81.228.91.179)  22.263 ms  22.265 ms  22.259 ms
+ 6  s-b5-link.ip.twelve99.net (62.115.123.166)  19.333 ms  17.592 ms  17.520 ms
+ 7  72.14.243.64 (72.14.243.64)  17.509 ms  13.373 ms  13.137 ms
+ 8  142.250.213.179 (142.250.213.179)  14.672 ms  13.847 ms  14.553 ms
+ 9  209.85.241.29 (209.85.241.29)  13.861 ms  13.769 ms  12.304 ms
+10  muc03s13-in-f4.1e100.net (216.58.211.4)  12.099 ms  12.096 ms  13.000 ms
+]0;user@user-VirtualBox: ~[01;32muser@user-VirtualBox[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-08-24 13:40:02+02:00 [COMMAND_EXIT_CODE="0"]
